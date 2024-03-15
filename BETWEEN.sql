@@ -1,0 +1,15 @@
+SELECT * FROM rental
+WHERE 
+rental_date BETWEEN '2005-05-24' AND '2005-05-26 23:59'
+ORDER BY rental_date DESC
+
+SELECT id, date, amount
+FROM sales
+WHERE date BETWEEN '2024-01-10' AND '2024-02-10'
+ORDER BY date
+
+SELECT COUNT(*) FROM payment
+WHERE 
+(payment_date BETWEEN '2020-01-26' AND '2020-01-27 23:59')
+AND
+(amount BETWEEN 1.99 AND 3.99)
